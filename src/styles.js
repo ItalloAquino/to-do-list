@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
     width: 100vw;
     height: 100vh;
-    background: rgb(6,1,92);
-    background: linear-gradient(90deg, rgba(6,1,92,1) 0%, rgba(9,9,121,1) 35%, rgba(2,173,208,1) 100%);
+    background: rgb(255,91,91);
+    background: linear-gradient(90deg, rgba(255,91,91,1) 0%, rgba(102,42,109,1) 55%, rgba(9,9,121,1) 100%, rgba(2,173,208,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@ export const List = styled.ul`
 
 export const Item = styled.li`
     color: #000000;
-    font-size: 15px;
+    font-size: 19px;
     font-weight: 400;
     background: #e4e4e4;
     box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
@@ -40,17 +40,18 @@ export const Item = styled.li`
     list-style-type: none;
     margin-bottom: 20px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
     padding-left: 15px;
     padding-right: 15px;
+    font-family: 'Roboto';
 `;
 
 export const Input = styled.input`
     border: 2px solid rgba(209, 211, 212, 0.4);
     border-radius: 5px;
     height: 40px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 400;
     outline: none;
     padding-left: 10px;
@@ -79,6 +80,9 @@ width: 20px;
   border-radius: 50%;
   background-color: #ff5b5b;
   position: relative;
+  margin: auto;
+  margin-left: 5px;
+  
 
   &::before,
   &::after {
@@ -101,5 +105,7 @@ width: 20px;
 `;
 
 export const MarginButtons = styled.line`
-  margin-left: 10px;
+  display: flex;
+  justify-content: right;
+  align-items: right;
 `
